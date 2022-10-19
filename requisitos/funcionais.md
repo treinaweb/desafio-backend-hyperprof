@@ -2,7 +2,7 @@
 
 - **PR01 - Cadastro de professor:** O sistema deve permitir que professores se cadastrem na plataforma informando nome, email, idade, descrição, valor da hora/aula e senha.
 
-- **PR02 - Login:** O sistema deve permitir que professores se autentiquem na plataforma informando email e senha.
+- **PR02 - Login:** O sistema deve permitir que professores se autentiquem na plataforma informando email e senha e também possam realizar o processo de logout.
 
 - **PR03 - Atualização de dados pessoais:** O sistema deve permitir que professores atualizem seus dados pessoais, como, nome, email idade, descrição, valor da hora/aula, senha e foto de perfil.
 
