@@ -26,17 +26,19 @@ Seu desafio é criar uma API para gerenciar professores e aulas particulares. A 
 
 ## Rotas
 
-| Rota                                   | Método | Descrição                                         |
-| -------------------------------------- | ------ | ------------------------------------------------- |
-| /api/professores                       | GET    | Lista os professores                              |
-| /api/professores/{professor_id}        | GET    | Detalhes do professor                             |
-| /api/professores/{professor_id}/alunos | POST   | Cadastra uma solicitação de aula                  |
-| /api/professores                       | POST   | Cadastra um professor                             |
-| /api/auth/login                        | POST   | Faz login                                         |
-| /api/professores                       | PUT    | Atualiza os dados do professor logado             |
-| /api/professores/{professor_id}/foto   | POST   | Atualiza a foto de um professor                   |
-| /api/professores/alunos                | GET    | Lista as solicitações de aula do professor logado |
-| /api/professores                       | DELETE | Exclui o professor logado                         |
+| Rota                                   | Método | Descrição                                         | Requer Autenticação |
+| -------------------------------------- | ------ | ------------------------------------------------- | ------------------- |
+| /api/professores                       | GET    | Lista os professores                              | Não                 |
+| /api/professores/{professor_id}        | GET    | Detalhes do professor                             | Não                 |
+| /api/professores/{professor_id}/alunos | POST   | Cadastra uma solicitação de aula                  | Não                 |
+| /api/professores                       | POST   | Cadastra um professor                             | Não                 |
+| /api/professores                       | PUT    | Atualiza os dados do professor logado             | Sim                 |
+| /api/professores/foto                  | POST   | Atualiza a foto de um professor                   | Sim                 |
+| /api/professores/alunos                | GET    | Lista as solicitações de aula do professor logado | Sim                 |
+| /api/professores                       | DELETE | Exclui o professor logado                         | Sim                 |
+| /api/auth/login                        | POST   | Faz login                                         | Não                 |
+| /api/auth/refresh                      | POST   | Atualiza o token de acesso                        | Não                 |
+| /api/auth/logout                       | POST   | Faz logout                                        | Sim                 |
 
 ## Diagrama Banco de Dados
 
